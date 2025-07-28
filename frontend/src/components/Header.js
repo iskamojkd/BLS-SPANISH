@@ -84,6 +84,19 @@ const Header = ({ systemStatus, isConnected, onToggleRealTimePanel, showRealTime
 
           {/* Status Indicators */}
           <div className="flex items-center space-x-4">
+            {/* Real-time Panel Toggle */}
+            <button
+              onClick={onToggleRealTimePanel}
+              className={`px-3 py-1 rounded-md text-sm font-medium transition-colors ${
+                showRealTimePanel 
+                  ? 'bg-blue-100 text-blue-700' 
+                  : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
+              }`}
+              title="Toggle real-time updates panel"
+            >
+              📡 Live
+            </button>
+
             {/* WebSocket Connection Status */}
             <div className="flex items-center space-x-1">
               <div className={`w-2 h-2 rounded-full ${isConnected ? 'bg-green-500' : 'bg-red-500'}`}></div>
