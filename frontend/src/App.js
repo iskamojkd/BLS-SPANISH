@@ -120,6 +120,8 @@ function App() {
         <Header 
           systemStatus={systemStatus} 
           isConnected={isConnected}
+          onToggleRealTimePanel={() => setShowRealTimePanel(!showRealTimePanel)}
+          showRealTimePanel={showRealTimePanel}
         />
         
         <main className="container mx-auto px-4 py-6">
