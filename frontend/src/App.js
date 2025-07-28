@@ -147,6 +147,15 @@ function App() {
             } />
           </Routes>
         </main>
+
+        {/* Real-time Updates Panel */}
+        {showRealTimePanel && (
+          <RealTimePanel 
+            updates={realTimeUpdates}
+            isConnected={isConnected}
+            onToggle={() => setShowRealTimePanel(false)}
+          />
+        )}
       </BrowserRouter>
     </div>
   );
