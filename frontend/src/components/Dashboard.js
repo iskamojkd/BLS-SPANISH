@@ -242,6 +242,7 @@ const Dashboard = ({ systemStatus, onStatusUpdate, websocket }) => {
         <ul className="space-y-2 text-blue-800">
           <li>• <strong>Start the system:</strong> Go to Controls → Start System to begin monitoring</li>
           <li>• <strong>Monitor progress:</strong> Watch the dashboard for real-time updates</li>
+          <li>• <strong>Live updates:</strong> Click the "📡 Live" button in the header to see real-time updates panel</li>
           <li>• <strong>Check appointments:</strong> Available slots will appear in the Appointments tab</li>
           <li>• <strong>Review logs:</strong> Check the Logs tab for detailed system activity</li>
           <li>• <strong>Receive emails:</strong> You'll get notified when slots are found or bookings are successful</li>
