@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-const Header = ({ systemStatus, isConnected }) => {
+const Header = ({ systemStatus, isConnected, onToggleRealTimePanel, showRealTimePanel }) => {
   const location = useLocation();
 
   const getStatusColor = (status) => {
