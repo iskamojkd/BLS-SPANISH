@@ -16,7 +16,7 @@ class BLSBackendTester:
     def __init__(self, base_url="http://localhost:8001"):
         self.base_url = base_url
         self.api_url = f"{base_url}/api"
-        self.ws_url = base_url.replace('https://', 'wss://').replace('http://', 'ws://') + '/ws'
+        self.ws_url = base_url.replace('https://', 'ws://').replace('http://', 'ws://') + '/ws'
         self.tests_run = 0
         self.tests_passed = 0
         self.session = requests.Session()
