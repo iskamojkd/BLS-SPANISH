@@ -9,6 +9,7 @@ import SystemControls from './components/SystemControls';
 import AppointmentSlots from './components/AppointmentSlots';
 import SystemLogs from './components/SystemLogs';
 import Header from './components/Header';
+import RealTimePanel from './components/RealTimePanel';
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
